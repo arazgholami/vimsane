@@ -1,20 +1,23 @@
-" ╔═══════════════════════════════════════════════════════╗
-" ||                        ARAZ GHOLAMI PERSONAL VIM CONFIG                     ||
-" ||                        https://arazgholami.com/vimrc                                         ||
-" ||                        Last Update: 5/13/26                                                        ||
-" ╚═══════════════════════════════════════════════════════╝
+" ==========================================================
+"          ARAZ GHOLAMI PERSONAL VIM CONFIG
+"          https://arazgholami.com/vimrc
+"          Last Update: 5/13/26
+"          URL: https://github.com/arazgholami/vimsane/
+" ==========================================================
 
 " =================================
 "          PLUGINS
 " =================================
 
 call plug#begin('~/.vim/plugged')
-Plug 'jwalton512/vim-blade'           " Laravel Blade syntax
-Plug 'ctrlpvim/ctrlp.vim'                  " Fuzzy file finder
-Plug 'preservim/nerdtree'              " File tree explorer
-Plug 'jiangmiao/auto-pairs'           " Auto bracket/quote pairing
-Plug 'ghifarit53/tokyonight-vim'     " Colorscheme
-Plug 'mattn/emmet-vim'                " Emmet HTML expansion
+
+Plug 'jwalton512/vim-blade'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'preservim/nerdtree'
+Plug 'jiangmiao/auto-pairs'
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'mattn/emmet-vim'
+
 call plug#end()
 
 " =================================
@@ -35,10 +38,10 @@ set showmode
 set showcmd
 
 " Search
-set incsearch           " Highlight matches as you type
-set hlsearch            " Keep matches highlighted
-set ignorecase          " Case-insensitive search...
-set smartcase           " ...unless query has uppercase
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
 
 " Indentation (4-space soft tabs)
 set tabstop=4
@@ -47,10 +50,10 @@ set expandtab
 set smartindent
 
 " Editor comfort
-set hidden              " Allow switching buffers without saving
-set scrolloff=8         " Keep 8 lines visible above/below cursor
-set signcolumn=yes      " Always show sign column (avoids layout jumps)
-set updatetime=300      " Faster CursorHold events (for plugins)
+set hidden
+set scrolloff=8
+set signcolumn=yes
+set updatetime=300
 
 " I-beam (vertical bar) in insert mode
 let &t_SI = "\<esc>[5 q"

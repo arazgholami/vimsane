@@ -9,7 +9,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 ## Download to your ~/.vimrc 
 ```
-wget "https://github.com/arazgholami/vimsane/vimrc"
+wget "https://raw.githubusercontent.com/arazgholami/vimsane/refs/heads/main/vimrc"
 cp vimrc ~/.vimrc
 ```
 
