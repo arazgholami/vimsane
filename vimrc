@@ -71,32 +71,23 @@ autocmd VimLeave * mksession! ./Session.vim
 autocmd BufRead,BufNewFile *.blade.php set filetype=blade
 
 " ── CtrlP ──────────────────────────────────────────────────────
-" Use <C-p> (default) or remap to something that doesn't shadow built-ins.
-" <S-S> was used here before, but Shift+S is a built-in (delete line → insert).
 nnoremap <C-p> :CtrlP<CR>
 
 " ── NERDTree ───────────────────────────────────────────────────
 nnoremap <C-t> :NERDTreeToggle<CR>
 
 " ── Emmet ──────────────────────────────────────────────────────
-" Smart Tab: expand Emmet abbreviation if applicable, else insert real tab.
-" The g:user_emmet_expandabbr_key is intentionally left unset to avoid
-" double-binding; the imap below handles everything.
 imap <expr> <Tab> emmet#expandAbbrIntelligent("\<Tab>")
 
 " ── PHP Omnicompletion ─────────────────────────────────────────
 autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
-
-" Accept completion popup with Enter; otherwise insert a normal newline.
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
-
-" Trigger omnicompletion manually with Ctrl+Space.
 inoremap <C-Space> <C-x><C-o>
 
 " ── Theme ─────────────────────────────────────────────────────
 set termguicolors
 set background=dark
-let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_style = 'night' 
 let g:tokyonight_enable_italic = 1
 colorscheme tokyonight
 

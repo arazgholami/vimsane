@@ -21,18 +21,18 @@ cp vimrc ~/.vimrc
 ```
 
 ## Keymap
-`:` Commands
-`i` Insert
-`y` Copy (yank!), `yy` Copy whole line
-`d` Cut, `dd` Cut whole line
-`p` Paste
-`u` Undo
-`ESC` and `v` Select, `V` for line selection 
-`qa` Close all and exit
-`ESC`+NUM Switch Tabs
-`G` Move to end of doc, `gg` Move to begining
-`Ctrl+t` Open tree
-`Ctrl+ww` Switch to Editor from Tree
-`Ctrl+p` Quick Open
-`/KEYWORD` Search
-`%s/KEYWORD/REPLACE-WITH/gc` Search and Replace (all, confirm before)
+`:` Commands <br>
+`i` Insert <br>
+`y` Copy (yank!), `yy` Copy whole line<br>
+`d` Cut, `dd` Cut whole line<br>
+`p` Paste<br>
+`u` Undo<br>
+`ESC` and `v` Select, `V` for line selection <br>
+`qa` Close all and exit<br>
+`ESC`+NUM Switch Tabs<br>
+`G` Move to end of doc, `gg` Move to begining<br>
+`Ctrl+t` Open tree<br>
+`Ctrl+ww` Switch to Editor from Tree<br>
+`Ctrl+p` Quick Open<br>
+`/KEYWORD` Search<br>
+`%s/KEYWORD/REPLACE-WITH/gc` Search and Replace (all, confirm before)<br>
