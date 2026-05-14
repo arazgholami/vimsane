@@ -27,10 +27,11 @@ cp vimrc ~/.vimrc
 `d` Cut, `dd` Cut whole line<br>
 `p` Paste<br>
 `u` Undo<br>
+`$` Go to End of line, `A` go to end of line and insert
+`G` Go to end of doc, `gg` Move to begining<br>
 `ESC` and `v` Select, `V` for line selection <br>
 `qa` Close all and exit<br>
 `ESC`+NUM Switch Tabs<br>
-`G` Move to end of doc, `gg` Move to begining<br>
 `Ctrl+t` Open tree<br>
 `Ctrl+ww` Switch to Editor from Tree<br>
 `Ctrl+p` Quick Open<br>
