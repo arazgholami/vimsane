@@ -1,7 +1,7 @@
 " ==========================================================
 "          ARAZ GHOLAMI PERSONAL VIM CONFIG
-"          https://arazgholami.com/vimrc
-"          Last Update: 5/13/26
+"               https://arazgholami.com
+"               Last Update: 5/14/26
 "          URL: https://github.com/arazgholami/vimsane/
 " ==========================================================
 
@@ -60,6 +60,9 @@ let &t_SI = "\<esc>[5 q"
 let &t_SR = "\<esc>[3 q"
 let &t_EI = "\<esc>[2 q"
 
+" Save current state before leave
+autocmd VimLeave * mksession! ./Session.vim
+
 " =================================
 "          PLUGIN CONFIG
 " =================================
@@ -100,12 +103,12 @@ colorscheme tokyonight
 " =================================
 "          TABS
 " =================================
-nnoremap <A-1> 1gt
-nnoremap <A-2> 2gt
-nnoremap <A-3> 3gt
-nnoremap <A-4> 4gt
-nnoremap <A-5> 5gt
-nnoremap <A-6> 6gt
-nnoremap <A-7> 7gt
-nnoremap <A-8> 8gt
-nnoremap <A-9> 9gt
+nnoremap <Esc>1 1gt
+nnoremap <Esc>2 2gt
+nnoremap <Esc>3 3gt
+nnoremap <Esc>4 4gt
+nnoremap <Esc>5 5gt
+nnoremap <Esc>6 6gt
+nnoremap <Esc>7 7gt
+nnoremap <Esc>8 8gt
+nnoremap <Esc>9 9gt
